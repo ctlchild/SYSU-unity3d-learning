@@ -46,12 +46,6 @@ public class PvP : MonoBehaviour {
         //bgStyle.normal.background = img;
         //GUI.Label(new Rect(0, 0, 1024, 781), "", bgStyle);
 
-
-
-        //winner parameters
-        int winner = Check();
-        string msg = "";
-
         //Back button
         // if (GUI.Button(new Rect(width - bWidth * 2, height - bHeight * 1.5f, bWidth / 2, bHeight / 2), "Back")) {
         //     Application.LoadLevel("Welcome");
@@ -62,7 +56,10 @@ public class PvP : MonoBehaviour {
             Reset();
             return;
         }
-
+        
+        //winner parameters
+        int winner = Check();
+        string msg = "";
         //Check if someone wins or draw
         if (winner>=1) {
             msg = (winner == 1 ? "Player1(X) Wins!" : "Player2(O) Wins!");

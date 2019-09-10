@@ -133,3 +133,6 @@ if (GUI.Button(new Rect(width + bWidth / 2, height + 3.5f * bHeight, bWidth * 2,
 }
 ```
 
+游戏效果如下图所示：
+
+![](./image/捕获3.PNG)

@@ -28,7 +28,7 @@ public class FirstController : MonoBehaviour, SceneController, UserAction {
 		boat = new BoatCon ();
 	}
 
-	private void loadCharacter() {
+	public void loadCharacter() {
 		for (int i = 0; i < 3; i++) {
 			ChaCon cha = new ChaCon ("priest");
 			cha.setName("priest" + i);
@@ -40,7 +40,6 @@ public class FirstController : MonoBehaviour, SceneController, UserAction {
 		for (int i = 0; i < 3; i++) {
 			ChaCon cha = new ChaCon ("devil");
 			cha.setName("devil" + i);
-			Debug.Log("devil"+i);
 			cha.setPosition (fromCoast.getEmptyPosition ());
 			cha.getOnCoast (fromCoast);
 			fromCoast.getOnCoast (cha);

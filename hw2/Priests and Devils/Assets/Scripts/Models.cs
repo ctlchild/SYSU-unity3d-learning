@@ -5,16 +5,17 @@ using Models;
 
 namespace Models {
 	public class Director : System.Object {
-		private static Director _instance;
-		public SceneController currentSceneController { get; set; }
-		public static Director getInstance() {
+		private static Director _instance; 
+		public static Director getInstance() { //使用单例模式
 			if (_instance == null) _instance = new Director ();
 			return _instance;
 		}
+		public SceneController currentSceneController { get; set; } //控制场景控制器
 	}
 
 	public interface SceneController {
-		void loadResources ();
+		void loadResources();
+		void loadCharacter();
 	}
 
 	public interface UserAction {
@@ -49,8 +50,8 @@ namespace Models {
 			else {
 				if (_dest.y < transform.position.y) mid.y = transform.position.y;	// from coast to boat
 				else mid.x = transform.position.x;	// from boat to coast
+				status = 1;
 			}
-			status = 1;
 		}
 
 		public void reset() {status = 0;}
@@ -112,11 +113,11 @@ namespace Models {
 	}
 
 	public class CoastCon {
-		readonly GameObject coast;
-		readonly Vector3 from_pos = new Vector3(9,1,0);
-		readonly Vector3 to_pos = new Vector3(-9,1,0);
-		readonly Vector3[] positions;
-		readonly int status;	// to->-1, from->1
+		GameObject coast;
+		Vector3 from_pos = new Vector3(9,1,0);
+		Vector3 to_pos = new Vector3(-9,1,0);
+		Vector3[] positions;
+		int status;	// to->-1, from->1
 
 		ChaCon[] passenger;
 
@@ -181,12 +182,12 @@ namespace Models {
 	}
 
 	public class BoatCon {
-		readonly GameObject boat;
-		readonly Move move;
-		readonly Vector3 fromPosition = new Vector3 (5, 1, 0);
-		readonly Vector3 toPosition = new Vector3 (-5, 1, 0);
-		readonly Vector3[] from_positions;
-		readonly Vector3[] to_positions;
+		GameObject boat;
+		Move move;
+		Vector3 fromPosition = new Vector3 (5, 1, 0);
+		Vector3 toPosition = new Vector3 (-5, 1, 0);
+		Vector3[] from_positions;
+		Vector3[] to_positions;
 
 		int status; // to->-1; from->1
 		ChaCon[] passenger = new ChaCon[2];

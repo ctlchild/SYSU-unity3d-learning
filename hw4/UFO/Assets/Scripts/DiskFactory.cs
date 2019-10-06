@@ -8,8 +8,7 @@ public class DiskFactory : MonoBehaviour
     private List<DiskData> used = new List<DiskData>();   //正在被使用的飞碟列表
     private List<DiskData> free = new List<DiskData>();   //空闲的飞碟列表
 
-    public GameObject GetDisk(int round)
-    {
+    public GameObject GetDisk(int round){
         int choice = 0;
         int scope1 = 1, scope2 = 4, scope3 = 7;           //随机的范围
         float start_y = -10f;                             //刚实例化时的飞碟的竖直位置

@@ -1,0 +1,4 @@
+sceneSetups:
+- path: "F:/\u5E38\u7528/\u5927\u4E09\u4E0A/unity/Unity3d-learning-HW5/Unity3d-learning-HW5/HelloUFO/Assets/Scenes/myScene.unity"
+  isLoaded: 1
+  isActive: 1

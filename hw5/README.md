@@ -82,4 +82,4 @@ public class Adapter : MonoBehaviour,AdaActionmanager {
 
 游戏效果：
 
-![](F:\常用\大三上\unity\hw\hw5\演示.gif)
+![](./演示.gif)

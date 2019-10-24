@@ -1,4 +1,4 @@
-# Homework 5
+# Homework 6
 
 ### 编程实践——智能巡逻兵
 
@@ -232,5 +232,5 @@ public class AreaCollide : MonoBehaviour {
 
 ##### 实验结果：
 
-![](F:\常用\大三上\unity\hw\hw6\演示.png)
+![](./演示.png)
 

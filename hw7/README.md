@@ -6,11 +6,11 @@
 
 首先创建空对象，命名为`Particle`，然后创建其子对象，命名为`Clockwise_outer`
 
-![](F:\常用\大三上\unity\hw\hw7\image\捕获.PNG)
+![](./image/捕获.PNG)
 
 在`Clockwise_outer`中点击`Add Component`，输入`Particle System`，添加粒子系统
 
-![](F:\常用\大三上\unity\hw\hw7\image\捕获2.jpg)
+![](./image/捕获2.jpg)
 
 接下来是代码部分
 
@@ -129,5 +129,5 @@ void Update ()
 
 效果图：
 
-![](F:\常用\大三上\unity\hw\hw7\image\演示.gif)
+![](./image/演示.gif)
 

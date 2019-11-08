@@ -127,6 +127,12 @@ void Update ()
 }
 ```
 
+最后我们创建另一个子对象，命名为`Anticlockwise_inner`。将代码拖进这两个子对象中。`Anticlockwise_inner`将代码选项中的`clockwise`选项去掉。
+
+![](F:\常用\大三上\unity\hw\hw7\image\捕获3.PNG)
+
+最后调整两个环半径大小就可以实现粒子光环了。
+
 效果图：
 
 ![](./image/演示.gif)
